@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
               Positioned(
                 bottom: 20,
                 child: Padding(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -126,7 +126,7 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               children: List.generate(categories.length, (index) {
                 return Padding(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   child: SizedBox(
                     height: 200,
                     width: 160,
@@ -240,7 +240,7 @@ class _HomePageState extends State<HomePage> {
                       SizedBox(
                         width: 140,
                         child: Text(
-                          "\$" + recommends[index]['price'].toString(),
+                          "\$${recommends[index]['price']}",
                           style: const TextStyle(
                               color: grey,
                               fontWeight: FontWeight.bold,
@@ -300,7 +300,7 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               children: List.generate(recently.length, (index) {
                 return Padding(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   child: Column(
                     children: [
                       Container(

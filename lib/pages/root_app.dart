@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_online_ui/json/const.dart';
 import 'package:shopping_online_ui/pages/home_page.dart';
+import 'package:shopping_online_ui/pages/store_page.dart';
 import 'package:shopping_online_ui/theme/colors.dart';
 
 class RootApp extends StatefulWidget {
@@ -105,12 +106,7 @@ class _RootAppState extends State<RootApp> {
       index: activeColor,
       children: const [
         HomePage(),
-        Center(
-          child: Text(
-            'Store',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-        ),
+        StorePage(),
         Center(
           child: Text(
             'Account',
