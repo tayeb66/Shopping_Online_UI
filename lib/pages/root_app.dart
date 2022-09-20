@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_online_ui/json/const.dart';
+import 'package:shopping_online_ui/pages/account_pages.dart';
 import 'package:shopping_online_ui/pages/home_page.dart';
 import 'package:shopping_online_ui/pages/store_page.dart';
 import 'package:shopping_online_ui/theme/colors.dart';
@@ -107,12 +108,7 @@ class _RootAppState extends State<RootApp> {
       children: const [
         HomePage(),
         StorePage(),
-        Center(
-          child: Text(
-            'Account',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-        ),
+        AccountPage(),
         Center(
           child: Text(
             'Cart',
