@@ -3,6 +3,7 @@ import 'package:shopping_online_ui/json/const.dart';
 import 'package:shopping_online_ui/pages/account_pages.dart';
 import 'package:shopping_online_ui/pages/cart_page.dart';
 import 'package:shopping_online_ui/pages/home_page.dart';
+import 'package:shopping_online_ui/pages/more_page.dart';
 import 'package:shopping_online_ui/pages/store_page.dart';
 import 'package:shopping_online_ui/theme/colors.dart';
 
@@ -111,13 +112,7 @@ class _RootAppState extends State<RootApp> {
         StorePage(),
         AccountPage(),
         CartPage(),
-
-        Center(
-          child: Text(
-            'More',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-        ),
+        MorePage(),
       ],
     );
   }
